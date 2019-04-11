@@ -1,0 +1,12 @@
+<div class="container">
+
+  <%= form_for(@flat) do |f| %>
+      <%= f.text_field :name %>
+      <%= f.text_field :address %>
+      <%= f.text_area :description %>
+      <%= f.number_field :price_per_night %>
+      <%= f.number_field :number_of_guests %>
+      <%= f.submit "Publish Flat" %>
+  <% end %>
+
+</div>

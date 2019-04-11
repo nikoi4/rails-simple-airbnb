@@ -1,0 +1,41 @@
+.cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 1px 2px 0px rgba(0,0,0,0.2);
+}
+
+.card-body {
+  background-color: rgba(0,0,0,0.1);
+  padding: 15px;
+  height: 120px;
+  h3 {
+    height: 40px;
+    margin: 10px 0;
+  }
+  p {
+    margin: 5px 0;
+    height: 30px;
+  }
+}
+
+.card-icons {
+  i {
+    margin-right: 10px;
+  }
+}
+
+.card-action {
+  padding: 15px;
+  height: 20px;
+  a {
+
+  }
+}
