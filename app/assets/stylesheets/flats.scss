@@ -1,7 +1,11 @@
 @import 'components/navbar';
 @import 'components/cards';
+@import 'components/form';
 
-
-.container {
-  margin: 0 20px;
+a {
+  text-decoration: none;
+  outline: none;
+  color: #3386FB;
 }
+
+

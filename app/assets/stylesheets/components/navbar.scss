@@ -1,14 +1,19 @@
-.navbar{
+.airbnb-navbar{
   background: rgba(0,0,0,0.1);
-  height: 30px;
+  height: 50px;
   position: top;
   position: sticky;
   margin: 0;
-  padding: 0 10px;
-  h4 {
-    margin: 0;
-  }
+  padding: 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.navbar-home {
+  margin: 0;
+  text-decoration: none;
+  color: black;
+  &:hover {
+    text-decoration: none !important;
+  }
 }

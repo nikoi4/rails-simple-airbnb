@@ -1,12 +1,16 @@
-<div class="container">
 
-  <%= form_for(@flat) do |f| %>
-      <%= f.text_field :name %>
-      <%= f.text_field :address %>
-      <%= f.text_area :description %>
-      <%= f.number_field :price_per_night %>
-      <%= f.number_field :number_of_guests %>
-      <%= f.submit "Publish Flat" %>
+<div class="form-wrapper">
+  <%= simple_form_for (@flat) do |f| %>
+      <h3>Add new Flat</h3>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :description %>
+      <%= f.input :price_per_night %>
+      <%= f.input :number_of_guests %>
+      <div class="submit">
+        <%= f.submit "Publish", class: "btn btn-primary" %>
+      </div>
+
   <% end %>
 
 </div>

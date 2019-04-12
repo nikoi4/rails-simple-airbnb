@@ -1,6 +1,6 @@
 .cards-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -15,7 +15,7 @@
 .card-body {
   background-color: rgba(0,0,0,0.1);
   padding: 15px;
-  height: 120px;
+  height: 150px;
   h3 {
     height: 40px;
     margin: 10px 0;
@@ -34,7 +34,7 @@
 
 .card-action {
   padding: 15px;
-  height: 20px;
+  height: 50px;
   a {
 
   }
