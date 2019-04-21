@@ -1,0 +1,21 @@
+.btn {
+  border: 2px solid #3B91FC;
+  padding: 4px 12px;
+  &:hover {
+    color: white;
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+.transp-blue {
+  color: #3B91FC;
+  &:hover {
+    background-color: #3B91FC;
+  }
+}
+
+.brad-sm {
+  border-radius: 3px;
+}
+
