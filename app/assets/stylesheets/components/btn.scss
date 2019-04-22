@@ -1,5 +1,4 @@
-.btn {
-  border: 2px solid #3B91FC;
+.btn-small {
   padding: 4px 12px;
   &:hover {
     color: white;
@@ -9,13 +8,19 @@
 }
 
 .transp-blue {
+  border: 2px solid #3B91FC;
   color: #3B91FC;
   &:hover {
     background-color: #3B91FC;
   }
 }
 
-.brad-sm {
-  border-radius: 3px;
+.transp-green {
+  background-color: transparent;
+  border: 2px solid green;
+  color: green;
+  &:hover {
+    background-color: green;
+  }
 }
 

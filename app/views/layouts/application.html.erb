@@ -6,14 +6,17 @@
     <%= csp_meta_tag %>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <div class='airbnb-navbar'>
       <%= link_to 'Simple Airbnb', flats_path, class:"navbar-home" %>
-      <div class='navbar-action'>
-        <%= link_to 'add flat', new_flat_path, class:"btn transp-blue brad-sm" %>
+      <div class='navbar-action flex align-center'>
+        <form class="flex align-center">
+          <input class="form-control" name="query" type="search" placeholder="<%= @query %>" value="">
+          <button class="btn-small transp-green brad-sm" type="submit">Search</button>
+        </form>
+        <%= link_to 'Add flat', new_flat_path, class:"btn-small transp-blue brad-sm" %>
       </div>
     </div>
     <%= yield %>
