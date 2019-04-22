@@ -1,12 +1,50 @@
-@import 'components/navbar';
-@import 'components/cards';
-@import 'components/form';
-@import 'components/btn';
+$grey: #E8E8E8;
 
 a {
   text-decoration: none;
   outline: none;
   color: #3386FB;
+  &:hover {
+    text-decoration: none;
+    outline: none;
+  }
 }
 
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
 
+.background-img {
+  width: 100wh;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlap-sm {
+  margin-top: -70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flat-main-wrap, .flat-booking-wrap {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  margin: 0 25px;
+}
+
+.flat-main-wrap{
+  max-width: 70%;
+}
+
+.flat-booking-wrap{
+  max-width: 30%;
+}
+
+.bg-grey{
+  background-color: $grey;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px 0px rgba(0,0,0,0.2);
+}
