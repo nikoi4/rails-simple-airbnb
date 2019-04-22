@@ -1,4 +1,4 @@
-<div class="background-img" style="background-image: url(https://source.unsplash.com/collection/2713545/1600x400)">
+<div class="background-img" style="background-image: url(<%= @flat.picture_url%>)">
 </div>
 <div class="container overlap-sm">
   <div class="flat-main-wrap">
@@ -14,17 +14,31 @@
   <div class="flat-booking-wrap">
     <div class="bg-grey brad-sm flat-booking">
       <h4>Book this place!</h4>
-      <form action=""></form>
+      <form action="">
+        <div>
+          <label for="">From:</label>
+          <input type="text" placeholder="<%= Date.today %>">
+        </div>
+        <div>
+          <label for="">To:</label>
+          <input type="text" placeholder="<%= Date.today %>">
+        </div>
+      </form>
     </div>
     <div class="bg-grey brad-sm flat-details">
-      <h3></h3>
+      <h3>Details</h3>
       <div class="flex">
-
+        <i class="fas fa-user-friends">   <%= @flat.number_of_guests %></i><i class="fas fa-dollar-sign">   <%= @flat.price_per_night %></i>
       </div>
     </div>
-    <div class="bg-grey brad-sm flat-share flex">
-      <p></p>
-      <div></div>
+    <div class="bg-grey brad-sm flat-share flex space-between aling-center">
+      <p>Share</p>
+      <div class="flat-share-media flex">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-pinterest-square"></i>
+        <i class="fa fa-envelope-square"></i>
+      </div>
     </div>
   </div>
 </div>

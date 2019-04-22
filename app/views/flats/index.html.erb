@@ -3,6 +3,8 @@
   <div class="cards-wrapper">
     <% @flats.each do |flat| %>
       <div class="card">
+        <div class="card-img" style="background-image: url(<%= flat.picture_url%>)">
+        </div>
         <div class="card-body">
           <h3><%= flat.name %></h3>
           <p><%= flat.address %></p>
@@ -11,7 +13,11 @@
           </div>
         </div>
         <div class="card-action">
-          <%= link_to 'more info', flat_path(flat) %>
+          <%= link_to 'More info', flat_path(flat) %>
+          |
+          <%= link_to 'Edit', edit_flat_path(flat) %>
+          |
+          <%= link_to 'Remove', flat, method: :delete, data: { confirm: "Are you sure?" } %>
         </div>
       </div>
     <% end %>
